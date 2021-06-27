@@ -1,89 +1,104 @@
-// .team-section {
-//   background-color: var(--feature-team-portfolio-btn-bgc);
+.team-section {
+  background-color: var(--feature-team-portfolio-btn-bgc);
 
-//   .heading-team {
-//     margin-bottom: 50px;
-//   }
+  .heading-team {
+    margin-bottom: 30px;
 
-//   .team-list {
-//     display: flex;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
 
-//     .team-list-item {
-//       width: 270px;
-//       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//         0px 2px 1px rgba(0, 0, 0, 0.2);
-//       border-radius: 0px 0px 4px 4px;
+  .team-list {
+    // display: flex;
 
-//       &:not(:last-child) {
-//         margin-right: 30px;
-//       }
-//     }
-//   }
-// }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-// .team-list-item-textbox {
-//   padding: 30px 0;
-//   background-color: var(--hero-and-city-word-color);
+    .team-list-item {
+       width: 450px;
+        height: 460px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
 
-//   .team-heading {
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.19;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--h-color);
-//     margin-bottom: 10px;
-//   }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+      }
 
-//   .team-text {
-//     font-size: 16px;
-//     line-height: 1.19;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     margin-bottom: 16px;
-//   }
-// }
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
 
-// .team-list-icon-big-box {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+.team-list-item-textbox {
+  padding: 30px 0;
+  background-color: var(--hero-and-city-word-color);
 
-//   .team-list-icon-box {
-//     &:not(:last-child) {
-//       margin-right: 10px;
-//     }
+  .team-heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--h-color);
+    margin-bottom: 10px;
+  }
 
-//     .team-list-icon-link {
-//       width: 44px;
-//       height: 44px;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       border-radius: 50%;
-//       transition-property: background-color;
-//       transition-duration: var(--anim-transition-duration);
-//       transition-timing-function: var(--anim-transition-timing-function);
+  .team-text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+  }
+}
 
-//       .team-list-icon {
-//         width: 20px;
-//         height: 20px;
-//         display: block;
-//         fill: var(--team-and-clients-fill);
-//         transition-property: fill;
-//         transition-duration: var(--anim-transition-duration);
-//         transition-timing-function: var(--anim-transition-timing-function);
-//       }
+.team-list-icon-big-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-//       &:hover,
-//       &:focus {
-//         background-color: var(--second-color);
-//       }
+  .team-list-icon-box {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
 
-//       &:hover .team-list-icon,
-//       &:focus .team-list-icon {
-//         fill: var(--hero-and-city-word-color);
-//       }
-//     }
-//   }
-// }
+    .team-list-icon-link {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition-property: background-color;
+      transition-duration: var(--anim-transition-duration);
+      transition-timing-function: var(--anim-transition-timing-function);
+
+      .team-list-icon {
+        width: 20px;
+        height: 20px;
+        display: block;
+        fill: var(--team-and-clients-fill);
+        transition-property: fill;
+        transition-duration: var(--anim-transition-duration);
+        transition-timing-function: var(--anim-transition-timing-function);
+      }
+
+      &:hover,
+      &:focus {
+        background-color: var(--second-color);
+      }
+
+      &:hover .team-list-icon,
+      &:focus .team-list-icon {
+        fill: var(--hero-and-city-word-color);
+      }
+    }
+  }
+}
