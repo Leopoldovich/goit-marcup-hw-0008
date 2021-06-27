@@ -226,8 +226,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    // width: 100%;
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     background-color: var(--hero-and-city-word-color);
     overflow: auto;
     opacity: 0;
@@ -279,9 +280,16 @@ header {
     margin-bottom: 302px;
 
     .mobile-menu-item {
+      color: var(--h-color);
+      font-weight: 500;
+
       &:not(:last-child) {
         margin-bottom: 30px;
       }
+    }
+
+    .mobile-active-link {
+      color: var(--second-color);
     }
   }
 
