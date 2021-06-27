@@ -1,0 +1,110 @@
+.clients-container {
+  .client-heading {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .client-list-item-box {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+
+    .client-list-item {
+      @media screen and (max-width: 767px) {
+        margin-top: 30px;
+        margin-left: 30px;
+        // width: calc((100% - 30px) / 2);
+      }
+
+      @media screen and (max-width: 1199px) {
+        margin-top: 30px;
+        margin-left: 30px;
+        // width: calc((100% - 30px) / 3);
+      }
+
+      @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+.client-list-item-link {
+  width: 210px;
+  height: 92px;
+  //   width: 170px;
+  border: 1px solid var(--team-and-clients-fill);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: border;
+  transition-duration: var(--anim-transition-duration);
+  transition-timing-function: var(--anim-transition-timing-function);
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--second-color);
+  }
+
+  &:hover .client-list-icon,
+  &:focus .client-list-icon {
+    fill: var(--second-color);
+  }
+
+  .client-list-icon {
+    fill: var(--team-and-clients-fill);
+    transition-property: fill;
+    transition-duration: var(--anim-transition-duration);
+    transition-timing-function: var(--anim-transition-timing-function);
+  }
+
+  .yaco-client-list-icon {
+    width: 41px;
+    height: 47px;
+  }
+
+  .company-client-list-icon {
+    width: 40px;
+    height: 52px;
+  }
+
+  .company-round-client-list-icon {
+    width: 43px;
+    height: 41px;
+  }
+
+  .foster-client-list-icon {
+    width: 84px;
+    height: 41px;
+  }
+
+  .brand-client-list-icon {
+    width: 63px;
+    height: 45px;
+  }
+
+  .tag-client-list-icon {
+    width: 94px;
+    height: 44px;
+  }
+}
