@@ -1,0 +1,68 @@
+// variables
+
+@import "./utils/variables";
+
+// components
+
+@import "./components/mini-reset";
+@import "./components/components";
+
+// header
+
+@import "./components/header";
+@import "./components/header-nav";
+@import "./components/logo";
+@import "./components/nav-menu";
+@import "./components/nav-contacts";
+
+// main
+
+// hero
+
+@import "./components/hero";
+
+// feature
+
+@import "./components/feature";
+@import "./components/feature-icons";
+
+// works
+
+@import "./components/works";
+
+// team
+
+@import "./components/team";
+@import "./components/team-text";
+@import "./components/team-icons";
+
+// clients
+
+@import "./components/clients";
+@import "./components/clients-link-icons";
+
+// portfolio
+
+@import "./components/portfolio";
+@import "./components/portfolio-filter-btn";
+@import "./components/portfolio-list";
+@import "./components/portfolio-text";
+@import "./components/portfolio-link-overlay";
+
+// footer
+
+@import "./components/footer";
+@import "./components/footer-contact-link";
+@import "./components/footer-adress-list-item";
+@import "./components/footer-container-social";
+@import "./components/footer-list-icon";
+@import "./components/footer-container-forms";
+@import "./components/footer-form-in-footer";
+
+// modal
+
+@import "./components/modal-backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+@import "./components/modal-policy";
+@import "./components/modal-send-button";

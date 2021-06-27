@@ -1,0 +1,11 @@
+.portfolio-filter-btn-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  .portfolio-filter-btn-box-item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

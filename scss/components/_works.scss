@@ -1,0 +1,46 @@
+.work-section-top {
+display: none;
+  // @media screen and (min-width: 480px) and (min-width: 768px) {
+    
+  // }
+
+  
+
+  padding-top: 47px;
+
+  .work-heading {
+    margin-bottom: 50px;
+  }
+
+  .work-list {
+    display: flex;
+
+    .work-list-item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      .works-text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--hero-and-city-word-color);
+        background-color: var(--works-text-bgc);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
