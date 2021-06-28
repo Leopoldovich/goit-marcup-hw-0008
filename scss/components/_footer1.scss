@@ -10,6 +10,13 @@ footer {
     flex-direction: column;
     // justify-content: center;
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      align-items: baseline;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+
     @media screen and (min-width: 1200px) {
       align-items: baseline;
       flex-direction: row;
@@ -38,7 +45,11 @@ footer {
       padding-top: 0;
       padding-bottom: 0;
       margin-bottom: 20px;
-      display: block;
+
+       @media screen and (min-width: 768px) and (max-width: 1199px) {
+          margin-right: -2px;
+        }
+      
 
       .footer-logo-second-word {
         color: var(--hero-and-city-word-color);

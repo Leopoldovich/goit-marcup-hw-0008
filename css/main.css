@@ -1233,6 +1233,15 @@ footer .footer-container {
   flex-direction: column;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  footer .footer-container {
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   footer .footer-container {
     align-items: baseline;
@@ -1267,7 +1276,12 @@ footer .footer-container .footer-logo-link {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 20px;
-  display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  footer .footer-container .footer-logo-link {
+    margin-right: -2px;
+  }
 }
 
 footer .footer-container .footer-logo-link .footer-logo-second-word {
