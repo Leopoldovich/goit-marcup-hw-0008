@@ -1488,8 +1488,14 @@ footer .footer-container .footer-logo-link .footer-logo-second-word {
 
 .portfolio-filter-btn-box {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-filter-btn-box {
+    justify-content: center;
+  }
 }
 
 .portfolio-filter-btn-box .portfolio-filter-btn-box-item:not(:last-child) {

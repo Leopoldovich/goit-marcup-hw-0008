@@ -1,7 +1,11 @@
 .portfolio-filter-btn-box {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 
   .portfolio-filter-btn-box-item {
     &:not(:last-child) {
