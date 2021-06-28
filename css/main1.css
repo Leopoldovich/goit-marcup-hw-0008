@@ -382,6 +382,11 @@ header {
   margin-right: 30px;
 }
 
+.work-section-top .work-list .work-list-item .work-list-item-picture {
+  width: 370px;
+  height: 294px;
+}
+
 .work-section-top .work-list .work-list-item .works-text {
   position: absolute;
   bottom: 0;

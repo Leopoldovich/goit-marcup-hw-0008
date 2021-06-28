@@ -200,15 +200,40 @@
           <h2 class="heading work-heading">Чем мы занимаемся</h2>
           <ul class="list work-list">
             <li class="work-list-item">
-              <img src="./images/img1.jpg" alt="ноутбук" width="370" height="294" />
+              <!-- <img class="work-list-item-picture" src="./images/img1.jpg" alt="ноутбук" /> -->
+              <picture class="picture">
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/desk-prilozhenie-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img class="work-list-item-picture" src="./images/img1.jpg" alt="ноутбук" />
+              </picture>
               <p class="works-text">Десктопные приложения</p>
             </li>
             <li class="work-list-item">
-              <img src="./images/img2.jpg" alt="ноутбук и телефон" width="370" height="294" />
+              <!-- <img class="work-list-item-picture" src="./images/img2.jpg" alt="ноутбук и телефон" /> -->
+              <picture class="picture">
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/desk-mobilnoe-prilozhenie-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="work-list-item-picture"
+                  src="./images/img2.jpg"
+                  alt="ноутбук и телефон"
+                />
+              </picture>
               <p class="works-text">Мобильные приложения</p>
             </li>
             <li class="work-list-item">
-              <img src="./images/img3.jpg" alt="планшет" width="370" height="294" />
+              <!-- <img class="work-list-item-picture" src="./images/img3.jpg" alt="планшет" /> -->
+              <picture class="picture">
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/desk-diz-reshenie-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img class="work-list-item-picture" src="./images/img3.jpg" alt="планшет" />
+              </picture>
               <p class="works-text">Дизайнерские решения</p>
             </li>
           </ul>

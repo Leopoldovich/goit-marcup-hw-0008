@@ -1,10 +1,5 @@
 .work-section-top {
-display: none;
-  // @media screen and (min-width: 480px) and (min-width: 768px) {
-    
-  // }
-
-  
+  display: none;
 
   padding-top: 47px;
 
@@ -20,6 +15,11 @@ display: none;
 
       &:not(:last-child) {
         margin-right: 30px;
+      }
+
+      .work-list-item-picture {
+        width: 370px;
+        height: 294px;
       }
 
       .works-text {
