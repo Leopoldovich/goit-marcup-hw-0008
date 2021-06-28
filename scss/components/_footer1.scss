@@ -5,11 +5,32 @@ footer {
 
   .footer-container {
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
+    align-items: center;
+    flex-direction: column;
+    // justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      align-items: baseline;
+      flex-direction: row;
+    }
 
     .footer-container-box {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 1199px) {
+        align-items: center;
+      }
+
       &:not(:last-child) {
-        margin-right: 70px;
+        @media screen and (max-width: 1199px) {
+          margin-bottom: 60px;
+        }
+
+        @media screen and (min-width: 1200px) {
+          margin-right: 70px;
+        }
       }
     }
 
@@ -17,6 +38,7 @@ footer {
       padding-top: 0;
       padding-bottom: 0;
       margin-bottom: 20px;
+      display: block;
 
       .footer-logo-second-word {
         color: var(--hero-and-city-word-color);
@@ -46,6 +68,14 @@ footer {
 
 .footer-contact-link-city-address {
   color: var(--hero-and-city-word-color);
+}
+
+.address-list {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .address-list-item {
@@ -111,7 +141,12 @@ footer {
 }
 
 .footer-container-box-forms {
-  margin-left: 17px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 17px;
+  }
 
   .form-in-footer-text {
     font-size: 14px;
@@ -125,9 +160,15 @@ footer {
 .form-in-footer {
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 
   .mail-form-in-footer {
-    display: inline-block;
+    display: block;
     color: var(--hero-and-city-word-color);
     background-color: var(--footer-bg-color);
     outline: none;
@@ -135,13 +176,24 @@ footer {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
+    // width: 358px;
+    // max-width: 450px;
+    // width: 100%;
+    width: 450px;
     height: 50px;
-    margin-right: 12px;
+    // margin-right: 12px;
+    margin-bottom: 20px;
     padding-left: 16px;
     transition-property: border;
     transition-duration: var(--anim-transition-duration);
     transition-timing-function: var(--anim-transition-timing-function);
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
 
     &::placeholder {
       color: var(--mail-form-in-footer-border-color);
