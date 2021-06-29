@@ -24,6 +24,7 @@
     flex-direction: column;
     // justify-content: center;
     align-content: center;
+    // margin: 0 auto;
 
     @media screen and (min-width: 768px) {
       // display: flex;
@@ -40,16 +41,21 @@
 
       @media screen and (min-width: 768px) {
         max-width: 354px;
-        margin: 0 auto;
+        // margin: 0 auto;
       }
 
       @media screen and (min-width: 1200px) {
         width: 270px;
-        margin: 0 auto;
+        // margin: 0 auto;
+        // flex-basis: auto;
       }
 
       &:not(:last-child) {
         @media screen and (max-width: 767px) {
+          margin-right: 30px;
+        }
+
+         @media screen and (min-width: 1200px) {
           margin-right: 30px;
         }
       }

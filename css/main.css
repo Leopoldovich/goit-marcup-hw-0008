@@ -155,27 +155,6 @@ header {
   border-bottom: 1px solid var(--header-border-color);
 }
 
-@media screen and (min-width: 480px) {
-  header {
-    width: 480px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  header {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-
 .header-nav-box {
   display: flex;
   align-items: center;
@@ -402,17 +381,20 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
+    height: 100vh;
     background-color: var(--hero-and-city-word-color);
     overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 999;
   }
   .mobile-menu .mobile-menu-container {
     position: relative;
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   .mobile-menu .mobile-menu-close-btn {
     position: absolute;
@@ -444,7 +426,6 @@ header {
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    margin-bottom: 302px;
   }
   .mobile-menu-nav .mobile-menu-item {
     color: var(--h-color);
@@ -490,8 +471,8 @@ header {
 }
 
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   background-size: cover;
   background-color: var(--hero-section-color);
@@ -527,6 +508,8 @@ header {
   .hero-section {
     max-width: 1600px;
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-Img.jpg");
   }
 }
@@ -642,7 +625,7 @@ header {
   width: 30px;
   height: 30px;
   fill: var(--modal-close-button-icon-fill);
-  stroke: var(--hero-and-city-word-color);
+  stroke: var(--main-color);
 }
 
 .modal .modal-close-button:hover .modal-close-button-icon,
@@ -878,18 +861,22 @@ header {
 @media screen and (min-width: 768px) {
   .feature-section-bottom .feature-list .feature-list-item {
     max-width: 354px;
-    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature-section-bottom .feature-list .feature-list-item {
     width: 270px;
-    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .feature-section-bottom .feature-list .feature-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .feature-section-bottom .feature-list .feature-list-item:not(:last-child) {
     margin-right: 30px;
   }
@@ -1039,7 +1026,6 @@ header {
 
 @media screen and (min-width: 1200px) {
   .team-section .team-list .team-list-item:not(:last-child) {
-    margin-right: 30px;
     margin-bottom: 30px;
   }
 }
@@ -1507,6 +1493,12 @@ footer .footer-container .footer-logo-link .footer-logo-second-word {
 
 .portfolio-filter-btn-box .portfolio-filter-btn-box-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-filter-btn-box .portfolio-filter-btn-box-item {
+    margin-bottom: 6px;
+  }
 }
 
 .buttons {
