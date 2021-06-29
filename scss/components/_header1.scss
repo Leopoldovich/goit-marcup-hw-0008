@@ -235,6 +235,7 @@ header {
     visibility: hidden;
     pointer-events: none;
     z-index: 999;
+    display: flex;
 
     .mobile-menu-container {
       position: relative;
@@ -298,6 +299,7 @@ header {
 
   .mobile-menu-contact {
     margin-bottom: 64px;
+    margin-top: auto;
 
     .mobile-contact-link-tel {
       color: var(--second-color);
