@@ -1,6 +1,10 @@
 .team-section {
   background-color: var(--feature-team-portfolio-btn-bgc);
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 0;
+  }
+
   .heading-team {
     margin-bottom: 30px;
 
