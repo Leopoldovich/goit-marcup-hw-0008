@@ -1444,6 +1444,7 @@ footer .footer-container .footer-logo-link .footer-logo-second-word {
 
 @media screen and (min-width: 1200px) {
   .form-in-footer .mail-form-in-footer {
+    width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
   }
