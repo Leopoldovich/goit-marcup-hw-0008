@@ -53,13 +53,12 @@
 }
 
 .portfolio-filter-box-list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
-    // width: calc((100% - 60px) / 2);
-    // flex-basis: calc((100% - 60px) / 2);
-    // margin-top: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1200px) {
@@ -85,6 +84,10 @@
       //   flex-basis: calc((100% - 60px) / 2);
       width: calc((100% - 60px) / 2);
       margin-left: 30px;
+
+      &:nth-child(1) .portfolio-list-item-textbox {
+        padding-bottom: 56px;
+      }
     }
 
     @media screen and (min-width: 1200px) {

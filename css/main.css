@@ -1544,9 +1544,11 @@ footer .footer-container .footer-logo-link .footer-logo-second-word {
   border-radius: 4px;
 }
 
-.portfolio-filter-box-list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .portfolio-filter-box-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1568,6 +1570,9 @@ footer .footer-container .footer-logo-link .footer-logo-second-word {
   .portfolio-filter-box-list .portfolio-filter-box-list-item {
     width: calc((100% - 60px) / 2);
     margin-left: 30px;
+  }
+  .portfolio-filter-box-list .portfolio-filter-box-list-item:nth-child(1) .portfolio-list-item-textbox {
+    padding-bottom: 56px;
   }
 }
 
