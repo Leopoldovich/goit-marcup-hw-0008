@@ -1571,9 +1571,6 @@ footer .footer-container .footer-logo-link .footer-logo-second-word {
     width: calc((100% - 60px) / 2);
     margin-left: 30px;
   }
-  .portfolio-filter-box-list .portfolio-filter-box-list-item:nth-child(1) .portfolio-list-item-textbox {
-    padding-bottom: 56px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
